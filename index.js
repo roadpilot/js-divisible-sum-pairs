@@ -34,7 +34,16 @@ function readLine() {
 
 function divisibleSumPairs(n, k, ar) {
     // Write your code here
-
+    let c = 0
+    for (let i=0; i<n; i++){
+       for (let j = (i+1); j<n; j++){
+            console.log(i,j,(ar[i]+ar[j]))
+            if((ar[i]+ar[j]) % k == 0){
+                c++
+            } 
+       }
+    }
+    return c
 }
 
 function main() {
